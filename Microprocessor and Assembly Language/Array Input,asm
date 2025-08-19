@@ -1,0 +1,26 @@
+include emu8086.inc 
+org 100h 
+.data 
+arr1 db 5 dup(?) 
+.code 
+mov ax,@data 
+mov ds,ax 
+mov si,0 
+mov cx,5 
+input: 
+mov ah, 01h 
+int 21h 
+mov arr1[si],al 
+inc si 
+loop input 
+printn 
+print "Output:" 
+mov si,0 
+mov cx,5 
+output: 
+mov dl, arr1[si] 
+mov ah, 02h 
+int 21h 
+inc si 
+loop output 
+ret
