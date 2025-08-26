@@ -6,3 +6,7 @@ if(a%2 !== 0){
 else{
     console.log("EVEN");
 }
+//with ternary
+let a= 5;
+let res= a%2 === 0 ? "EVEN" : "ODD";
+console.log(res);
