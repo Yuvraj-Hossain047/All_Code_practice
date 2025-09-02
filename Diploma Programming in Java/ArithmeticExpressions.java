@@ -1,8 +1,6 @@
-import java.util.Scanner;
-
 public class ArithmeticExpressions {
     public static void main(String[] args) {
-        // no need for Scanner, since no input is taken
+
         int expr1, expr2, expr3, expr4;
 
         expr1 = -5 + 8 * 6;
